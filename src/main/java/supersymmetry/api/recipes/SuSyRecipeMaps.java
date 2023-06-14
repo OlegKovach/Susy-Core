@@ -248,6 +248,10 @@ public class SuSyRecipeMaps {
     public static final RecipeMap<SimpleRecipeBuilder> FROTH_FLOTATION = new RecipeMap<>("froth_flotation", 3, 6, 2, 2, new SimpleRecipeBuilder(), false)
             .setSound(GTSoundEvents.BATH);
 
+    public static final RecipeMap<SimpleRecipeBuilder> CRYOGENIC_DISTILLATION = new RecipeMap<>("cryogenic_distillation", 1, 0, 9, 9, new SimpleRecipeBuilder(), false)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARC_FURNACE, ProgressWidget.MoveType.HORIZONTAL)
+            .setSound(GTSoundEvents.COOLING);
+
     public static void init(){
         RecipeMaps.SIFTER_RECIPES.setMaxFluidInputs(1);
         RecipeMaps.SIFTER_RECIPES.setMaxFluidOutputs(1);
